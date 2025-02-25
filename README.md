@@ -3,9 +3,9 @@
 Add these lines to `~/.zshrc` :
 ```zsh
 export NVIM_APPNAME=nvim-config/nvim_base
-alias nv="export NVIM_APPNAME=nvim-config/nvim_base && ~/.nvim.appimage" # Switch to and open with basic config
-alias nvn="export NVIM_APPNAME=nvim-config/nvim_note && ~/.nvim.appimage" # Switch to and open with note-taking config
-alias nvc="export NVIM_APPNAME=nvim-config/nvim_code && ~/.nvim.appimage" # Switch to and open with coding config
+alias nv="export NVIM_APPNAME=nvim-config/nvim_base && nvim" # Switch to and open with basic config
+alias nvn="export NVIM_APPNAME=nvim-config/nvim_note && nvim" # Switch to and open with note-taking config
+alias nvc="export NVIM_APPNAME=nvim-config/nvim_code && nvim" # Switch to and open with coding config
 ```
 
 ## nvim_base :
