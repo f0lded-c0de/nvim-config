@@ -8,10 +8,15 @@ alias nvn="export NVIM_APPNAME=nvim-config/nvim_note && nvim" # Switch to and op
 alias nvc="export NVIM_APPNAME=nvim-config/nvim_code && nvim" # Switch to and open with coding config
 ```
 
+# Configs documentation
 ## nvim_base :
 
 Basic config, template to build a new config, and useful to work on current configs, in case stuff gets broken in the process.
 Contains everything that is common to every other configs.
+
+### Plugins included
+- nvim-treesitter
+
 
 ## nvim_code :
 
