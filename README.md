@@ -25,3 +25,5 @@ Base config for coding. Work in progress.
 ## nvim_note :
 
 Config dedicated to note-taking. Includes plugins to edit Markdown files, as well as preview them easily.
+
+
