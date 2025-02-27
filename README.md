@@ -78,12 +78,12 @@ Every plugin, setting, or keybind included in this config is also included in ev
 
 ### Custom Settings:
 
-```vim
-set tabstop = 4
-set shiftwidth = 4
-set softtabstop = 4
-set number = true
-set wrap = false
+```lua
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.number = true
+vim.opt.wrap = false
 ```
 
 [Back to top](#top)
@@ -91,7 +91,21 @@ set wrap = false
 
 ## nvim_code
 
-Base config for coding. Work in progress.
+Coding dedicated config. Include stuff to help write/edit code as well as testing it. Tested only with the C language, although nothing I implemented was only designed for the C language.
+
+### Plugins included:
+
+- [ALE](https://github.com/dense-analysis/ale)
+    * Inline syntax errors (compilation errors).
+    * Can probably do other stuff, but didn't want to get into it as it was only for the inline errors that I added it.
+
+
+### Custom Settings:
+
+```lua
+vim.opt.smartindent = true
+```
+
 
 [Back to top](#top)
 

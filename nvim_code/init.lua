@@ -4,6 +4,7 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.number = true
 vim.opt.wrap = false
+vim.opt.smartindent = true
 
 -- NeoVim KeyBinds
 -- vim.keymap.set('mode(n, v, i)', 'keymap(<{key}-{key}>)(Ctrl=C, Shift=S)', 'command(<CR>=enter)', { noremap = true, silent = true, desc = "Description displayed in WhichKey tab" })
