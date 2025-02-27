@@ -10,12 +10,12 @@
         - [Custom Keybindings](#custom-keybindings)
         - [Custom Settings](#custom-settings)
     - [nvim_code](#nvim_code)
-        - [Plugins included](#plugins-included)
-        - [Custom Keybindings](#custom-keybindings)
-        - [Custom Settings](#custom-settings)
+        - [Plugins included](#plugins-included-1)
+        - [Custom Keybindings](#custom-keybindings-1)
+        - [Custom Settings](#custom-settings-1)
     - [nvim_note](#nvim_note)
-        - [Plugins included](#plugins-included)
-        - [Custom Keybindings](#custom-keybindings)
+        - [Plugins included](#plugins-included-2)
+        - [Custom Keybindings](#custom-keybindings-2)
 
 
 # Installation
