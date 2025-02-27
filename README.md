@@ -10,6 +10,9 @@
         - [Custom Keybindings](#custom-keybindings)
         - [Custom Settings](#custom-settings)
     - [nvim_code](#nvim_code)
+        - [Plugins included](#plugins-included)
+        - [Custom Keybindings](#custom-keybindings)
+        - [Custom Settings](#custom-settings)
     - [nvim_note](#nvim_note)
         - [Plugins included](#plugins-included)
         - [Custom Keybindings](#custom-keybindings)
@@ -98,6 +101,24 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
 - [ALE](https://github.com/dense-analysis/ale)
     * Inline syntax errors (compilation errors).
     * Can probably do other stuff, but didn't want to get into it as it was only for the inline errors that I added it.
+- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+    * Integrated terminal manager.
+    * Very powerful, can be used to manage several terminals in various ways at the same time, but I only included it in order to make managing one terminal much more intuitive than it is by default.
+    * Custom keybindings :
+        + Toggle term on and off : `<C-\>`
+        + Toggle term in vertical, horizontal, float, or tab mode : `(<leader><C-{first_letter_of_mode}>)`
+        + Now works in terminal mode : `<esc>`
+        + Now works in terminal mode : `<C-{h, j, k, l}>`
+            + Lets the terminal in terminal mode, so you can naviguate seamlessly while never leaving terminal mode in your term.
+        + Exits terminal mode and then does `<C-w>` : `<C-w>`
+    * Size for horizontal and vertical mode can be changed in the keybinds in `/lua/config/toggleterm.lua`.
+
+### Custom Keybindings:
+
+| Keybinding             | Action                    |
+| ---------------------- | ------------------------- |
+| `<C-\>`                | Toggle term on and off    |
+| `(<leader><C-{mode}>)` | Toggle term in {mode} |
 
 
 ### Custom Settings:
