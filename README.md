@@ -1,3 +1,4 @@
+<a name="top"></a>
 # Installation
 
 Clone this repo in your `~/.config/` (or equivalent), and add these lines to `~/.zshrc` :
@@ -10,37 +11,37 @@ alias nvc="export NVIM_APPNAME=nvim-config/nvim_code && nvim" # Switch to and op
 You can then use these aliases to open NeoVim with any config.
 
 
-# Configs documentation
+# Configs Documentation
 
-## nvim_base :
+## nvim_base
 
 Basic config, template to build a new config, and useful to work on current configs, in case stuff gets broken in the process.
 Contains everything that is common to every other configs.
 
-### Plugins included
+### Plugins included:
 
-- everforest-nvim
+- [everforest-nvim](https://github.com/neanias/everforest-nvim)
     * Colorscheme for NeoVim.
     * Configured to dim inactive windows (better visibility of focused window).
     * Custom keybinding:
         + Switch Dark/Light mode: `<C-s>`
-- nvim-treesitter
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
     * Language parser required in many other plugins.
-- which-key.nvim
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
     * Interactive keybinding hints through a popup.
-- nvim-tree.lua
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
     * Side-bar file explorer.
     * Custom keybinding:
         + Toggle on/off side-bar: `<C-n>`
     * Added custom internal mapping when focused on side-bar (in order to match the Split Window keybinding of `<C-w>`) :
         + 'Open: Horizontal Split' : `<C-s>`
-- plenary.nvim
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
     * Lua utility Library required by telescope.nvim.
-- telescope.nvim
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
     * Extensible fuzzy finder.
 
 
-### Custom Keybindings :
+### Custom Keybindings:
 
 | Keybinding | Action                    |
 | ---------- | ------------------------- |
@@ -53,7 +54,7 @@ Contains everything that is common to every other configs.
 | `<C-n>`    | Toggle nvim-tree side-bar |
 | `<C-s>`    | Toggle dark/light mode    |
 
-### Custom Settings :
+### Custom Settings:
 
 ```vim
 set tabstop = 4
@@ -63,13 +64,51 @@ set number = true
 set wrap = false
 ```
 
+[Back to top](#top)
 
-## nvim_code :
+
+## nvim_code
 
 Base config for coding. Work in progress.
 
+[Back to top](#top)
 
-## nvim_note :
+
+## nvim_note
 
 Config dedicated to note-taking. Includes plugins to edit Markdown files, as well as preview them easily.
 
+### Plugins included:
+
+- [markdown.nvim](https://github.com/tadmccorkle/markdown.nvim)
+    * Enhanced Markdown editing tools.
+    * Included for the inline styling keybindings and Table of Content creator.
+    * Custom keybindings:
+        + Set selected text (Visual mode) to bold: `<C-b>`
+        + Set selected text (Visual mode) to italics: `<C-i>`
+        + Create Table of Content: `<leader>t`
+            + (Based on Markdown headings in your file)
+- [peek.nvim](https://github.com/toppair/peek.nvim)
+    * Markdown file live previewer.
+    * Opens another window (outside of the terminal) showing a live preview of the file in a GitHub style, updating in real time.
+    * Custom keybinding:
+        + Toggle preview window: `<C-q>`
+    * Warning!
+        + This plugin requires [deno](https://deno.com).
+        + Doesn't work on every system. 
+            + Worked fine when tested on Dells running Ubuntu.
+            + Didn't work when tested on iMacs running Ubuntu.
+- [bullets.vim](https://github.com/bullets.vim/bullets.vim)
+    * Automated bullet lists.
+
+### Custom Keybindings:
+
+| Keybinding  | Action                      |
+| ----------- | --------------------------- |
+| `<C-b>`     | Set selected text to bold   |
+| `<C-i>`     | Set selected text to italic |
+| `<leader>t` | Create Table of Content     |
+| `<C-q>`     | Toggle preview window       |
+
+
+[Back to top](#top)

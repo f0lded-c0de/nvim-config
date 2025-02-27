@@ -24,6 +24,7 @@ vim.keymap.set('n', '<C-q>', function()
 		peek.open()
 	end
 end, { noremap = true, silent = true, desc = "Toggle markdown preview" })
+vim.keymap.set('n', '<leader>t', ':MDInsertToc', { noremap = true, silent = true, desc = "Go to next tab" })
 
 -- Plugins Startup
 require("config.lazy")
