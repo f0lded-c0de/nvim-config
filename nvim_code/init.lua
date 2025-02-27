@@ -21,6 +21,9 @@ end, { noremap = true, silent = true, desc = "Toggle nvim-tree Sidebar" })
 -- Plugins Startup
 require("config.lazy")
 
+-- Toggleterm config
+require("config.toggleterm")
+
 -- Dark or Light mode
 vim.keymap.set('n', '<C-s>', function()
 	if vim.o.background == "dark" then
