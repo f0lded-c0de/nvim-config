@@ -2,18 +2,27 @@
 # Table of Content
 
 - [Installation](#installation)
+    - [Requirements:](#requirements)
+    - [Set up:](#set-up)
 - [Configs Documentation](#configs-documentation)
     - [nvim_base](#nvim_base)
-        - [Plugins included:](#plugins-included)
-        - [Custom Keybindings:](#custom-keybindings)
-        - [Custom Settings:](#custom-settings)
+        - [Plugins included](#plugins-included)
+        - [Custom Keybindings](#custom-keybindings)
+        - [Custom Settings](#custom-settings)
     - [nvim_code](#nvim_code)
     - [nvim_note](#nvim_note)
-        - [Plugins included:](#plugins-included)
-        - [Custom Keybindings:](#custom-keybindings)
+        - [Plugins included](#plugins-included)
+        - [Custom Keybindings](#custom-keybindings)
 
 
 # Installation
+
+### Requirements:
+
+- [deno](https://deno.com) is required to use the markdown live preview plugin in the nvim_note config.
+
+
+### Set up:
 
 Clone this repo in your `~/.config/` (or equivalent), and add these lines to `~/.zshrc` :
 ```bash
@@ -23,7 +32,6 @@ alias nvn="export NVIM_APPNAME=nvim-config/nvim_note && nvim" # Switch to and op
 alias nvc="export NVIM_APPNAME=nvim-config/nvim_code && nvim" # Switch to and open with coding config
 ```
 You can then use these aliases to open NeoVim with any config.
-
 
 # Configs Documentation
 
@@ -112,7 +120,7 @@ Config dedicated to note-taking. Includes plugins to edit Markdown files, as wel
         + Doesn't work on every system. 
             + Worked fine when tested on Dells running Ubuntu.
             + Didn't work when tested on iMacs running Ubuntu.
-- [bullets.vim](https://github.com/bullets.vim/bullets.vim)
+- [bullets.vim](https://github.com/bullets-vim/bullets.vim)
     * Automated bullet lists.
 
 ### Custom Keybindings:
