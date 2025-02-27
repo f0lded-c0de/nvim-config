@@ -24,7 +24,6 @@ vim.keymap.set('n', '<C-q>', function()
 		peek.open()
 	end
 end, { noremap = true, silent = true, desc = "Toggle markdown preview" })
-vim.keymap.set('n', '<leader>t', ':MDInsertToc', { noremap = true, silent = true, desc = "Go to next tab" })
 
 -- Plugins Startup
 require("config.lazy")
@@ -39,6 +38,8 @@ vim.keymap.set('n', '<C-s>', function()
 	print(vim.o.background .. " mode")
 end, { noremap = true, silent = true, desc = "Go to next tab" })
 vim.o.background = "light"
+
+vim.keymap.set('n', '<leader>t', ':MDInsertToc<CR>', { noremap = true, silent = true, desc = "Create Table of Content" })
 
 -- Telescope KeyBinds
 local builtin = require('telescope.builtin')

@@ -1,4 +1,18 @@
 <a name="top"></a>
+# Table of Content
+
+- [Installation](#installation)
+- [Configs Documentation](#configs-documentation)
+    - [nvim_base](#nvim_base)
+        - [Plugins included:](#plugins-included)
+        - [Custom Keybindings:](#custom-keybindings)
+        - [Custom Settings:](#custom-settings)
+    - [nvim_code](#nvim_code)
+    - [nvim_note](#nvim_note)
+        - [Plugins included:](#plugins-included)
+        - [Custom Keybindings:](#custom-keybindings)
+
+
 # Installation
 
 Clone this repo in your `~/.config/` (or equivalent), and add these lines to `~/.zshrc` :
