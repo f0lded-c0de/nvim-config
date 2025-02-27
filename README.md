@@ -38,7 +38,7 @@ You can then use these aliases to open NeoVim with any config.
 ## nvim_base
 
 Basic config, template to build a new config, and useful to work on current configs, in case stuff gets broken in the process.
-Contains everything that is common to every other configs.
+Every plugin, setting, or keybind included in this config is also included in every other configs.
 
 ### Plugins included:
 
