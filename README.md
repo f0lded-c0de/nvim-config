@@ -115,7 +115,7 @@ Config dedicated to note-taking. Includes plugins to edit Markdown files, as wel
     * Opens another window (outside of the terminal) showing a live preview of the file in a GitHub style, updating in real time.
     * Custom keybinding:
         + Toggle preview window: `<C-q>`
-    * Warning!
+    * **Warning!**
         + This plugin requires [deno](https://deno.com).
         + Doesn't work on every system. 
             + Worked fine when tested on Dells running Ubuntu.
