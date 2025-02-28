@@ -210,7 +210,7 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
     <ul>
         <li>
             <details>
-                <summary><a href="https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-animate.md">mini-animate</a> : Comment code easily.</summary>
+                <summary><a href="https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-comment.md">mini-comment</a> : Comment code easily.</summary>
                 <ul>
                     <li>Comment selected text with <code>gc</code> in visual mode.</li>
                     <li>Comment current line with <code>gcc</code> in normal mode.</li>
