@@ -102,6 +102,15 @@ Every plugin, setting, or keybind included in this config is also included in ev
         <li>Press <code>&lt;leader&gt;fml</code> when in any file with any kind of text in it.</li>
     </ul>
 </details>
+<details>
+    <summary><a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a> : Autopairing plugin.</summary>
+    <ul>
+        <li>Match opening brackets/quotes/etc with closing ones after cursor.</li>
+    </ul>
+</details>
+<details>
+    <summary><a href="https://github.com/declancm/cinnamon.nvim">cinnamon.nvim</a> : Smooth scrolling.</summary>
+</details>
 
 
 ### Custom Keybindings:
@@ -183,12 +192,6 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
       </ul>
     </li>
     <li>Size for horizontal and vertical mode can be changed in the keybinds in <code>/lua/config/toggleterm.lua</code>.</li>
-  </ul>
-</details>
-<details>
-  <summary><a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a> : Autopairing plugin.</summary>
-  <ul>
-    <li>Match opening brackets/quotes/etc with closing ones after cursor.</li>
   </ul>
 </details>
 <details>
