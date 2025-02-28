@@ -1,20 +1,23 @@
 -- Vim Settings
 require("config.nvim")
 
--- NeoVim KeyBinds
+-- NeoVim Config
 require("config.keybinds")
 
 -- Plugins Startup
 require("config.lazy")
 
--- Toggleterm config
+-- Comment.nvim Startup
+require('Comment').setup()
+
+-- Toggleterm Config
 require("config.toggleterm")
 
--- Everforest config
+-- Everforest Config
 require("config.everforest")
 
--- Telescope KeyBinds
+-- Telescope Config
 require("config.telescope")
 
--- ALE config
+-- ALE Config
 require("config.ALE")

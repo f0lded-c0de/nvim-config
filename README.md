@@ -185,6 +185,12 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
     <li>Match opening brackets/quotes/etc with closing ones after cursor.</li>
   </ul>
 </details>
+<details>
+    <summary><a href="https://github.com/kobbikobb/move-lines.nvim">move-lines.nvim</a> : Move selected lines up or down.</summary>
+</details>
+<details>
+    <summary><a href="https://github.com/numToStr/Comment.nvim">Comment.nvim</a> : Powerful comment plugin.</summary>
+</details>
 
 
 ### Custom Keybindings:
