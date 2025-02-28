@@ -203,9 +203,6 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
   </ul>
 </details>
 <details>
-    <summary><a href="https://github.com/kobbikobb/move-lines.nvim">move-lines.nvim</a> : Move selected lines up or down.</summary>
-</details>
-<details>
     <summary><a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a> : This is a list of implemented modules in this specific config.</summary>
     <ul>
         <li>
@@ -214,6 +211,16 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
                 <ul>
                     <li>Comment selected text with <code>gc</code> in visual mode.</li>
                     <li>Comment current line with <code>gcc</code> in normal mode.</li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary><a href="https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-move.md">mini-move</a> : Move either selected text or current line in every direction.</summary>
+                <ul>
+                    <li>Update indentation live.</li>
+                    <li>Move selected text with <code>&lt;C-{motion}&gt;</code> in visual mode.</li>
+                    <li>Move current line with <code>&lt;M-{motion}&gt;</code> in normal mode. (M = Alt or Option)</li>
                 </ul>
             </details>
         </li>

@@ -9,7 +9,8 @@ require("config.lazy")
 
 -- Mini.nvim modules
 require("config.mini-animate")
-require('mini.comment').setup({})
+require('mini.comment').setup()
+require("config.mini-move")
 
 --  Fun Stuff
 require("config.fun")
