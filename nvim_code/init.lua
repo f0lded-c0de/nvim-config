@@ -7,6 +7,9 @@ require("config.keybinds")
 -- Plugins Startup
 require("config.lazy")
 
+--  Fun Stuff
+require("config.fun")
+
 -- Comment.nvim Startup
 require('Comment').setup()
 
