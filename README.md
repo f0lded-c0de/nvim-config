@@ -96,6 +96,12 @@ Every plugin, setting, or keybind included in this config is also included in ev
         <li>Show you where you would end up when typing <code>:{number}</code>, while typing live</li>
     </ul>
 </details>
+<details>
+    <summary><a href="https://github.com/Eandrju/cellular-automaton.nvim">cellular-automaton.nvim</a> : Surprise ! Press <code>&lt;leader&gt;fml</code> ;)</summary>
+    <ul>
+        <li>Press <code>&lt;leader&gt;fml</code> when in any file with any kind of text in it.</li>
+    </ul>
+</details>
 
 
 ### Custom Keybindings:
