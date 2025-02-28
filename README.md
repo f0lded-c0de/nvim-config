@@ -93,6 +93,7 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.number = true
 vim.opt.wrap = false
+vim.opt.cursorline = true
 ```
 
 [Back to top](#top)
