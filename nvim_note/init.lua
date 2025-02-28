@@ -13,5 +13,8 @@ require("config.everforest")
 -- Markdown.nvim config
 require("config.markdown")
 
--- Telescope KeyBinds
+-- Telescope.nvim KeyBinds
 require("config.telescope")
+
+-- Peek.nvim KeyBinds
+require("config.peek")

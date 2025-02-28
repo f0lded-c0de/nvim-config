@@ -22,6 +22,7 @@ return {
 			vim.keymap.set('n', '<C-s>', api.node.run.system, opts("Run System"))
 			vim.keymap.del("n", "<C-v>", { buffer = bufnr })
 			vim.keymap.del("n", "<C-t>", { buffer = bufnr })
+			vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
 		end
 
 		require("nvim-tree").setup {

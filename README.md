@@ -63,7 +63,7 @@ Every plugin, setting, or keybind included in this config is also included in ev
         + 'Open: Vertical Split' : `v`
         + 'Open: New Tab' : `t`
         + 'Run System' : `<C-s>` (because `s` was already taken by this, so swapped them)
-    * To see ALL keybindings (default and custom), when focused on sidebar : `g?`
+    * To see ALL keybindings (default and custom), when focused on sidebar : `?`
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
     * Lua utility Library required by telescope.nvim.
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
@@ -72,16 +72,18 @@ Every plugin, setting, or keybind included in this config is also included in ev
 
 ### Custom Keybindings:
 
-| Keybinding | Action                    |
-| ---------- | ------------------------- |
-| `<S-h>`    | Go to previous tab        |
-| `<S-l>`    | Go to next tab            |
-| `<C-h>`    | Go to left window         |
-| `<C-j>`    | Go to down window         |
-| `<C-k>`    | Go to up window           |
-| `<C-l>`    | Go to right window        |
-| `<C-n>`    | Toggle nvim-tree side-bar |
-| `<C-s>`    | Toggle dark/light mode    |
+| Keybinding | Action                                             |
+| ---------- | -------------------------------------------------- |
+| `<S-h>`    | Go to previous tab                                 |
+| `<S-l>`    | Go to next tab                                     |
+| `<C-h>`    | Go to left window                                  |
+| `<C-j>`    | Go to down window                                  |
+| `<C-k>`    | Go to up window                                    |
+| `<C-l>`    | Go to right window                                 |
+| `<C-n>`    | Toggle nvim-tree side-bar                          |
+| `<C-s>`    | Toggle dark/light mode                             |
+| `?`        | Toggle keybind help<br>(When on nvim tree sidebar) |
+
 
 ### Custom Settings:
 
@@ -122,7 +124,7 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
 | Keybinding             | Action                    |
 | ---------------------- | ------------------------- |
 | `<C-\>`                | Toggle term on and off    |
-| `(<leader><C-{mode}>)` | Toggle term in {mode} |
+| `(<leader><C-{mode}>)` | Toggle term in {mode}     |
 
 
 ### Custom Settings:
@@ -169,7 +171,7 @@ Config dedicated to note-taking. Includes plugins to edit Markdown files, as wel
 | `<C-b>`     | Set selected text to bold   |
 | `<C-i>`     | Set selected text to italic |
 | `<leader>t` | Create Table of Content     |
-| `<C-q>`     | Toggle preview window       |
+| `<leader>q` | Toggle preview window       |
 
 
 [Back to top](#top)
