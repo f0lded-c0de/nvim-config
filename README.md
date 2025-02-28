@@ -45,37 +45,51 @@ Every plugin, setting, or keybind included in this config is also included in ev
 
 ### Plugins included:
 
-- <details>
-    <summary><a href=https://github.com/neanias/everforest-nvim>everforest-nvim</a></summary>
-    <ul>
-        <li>Colorscheme for NeoVim.</li>
-        <li>Configured to dim inactive windows (better visibility of focused window).</li>
-        <li>Custom keybinding:</li>
-        <ul>
-            <li>Switch Dark/Light mode: `<C-s>`</li>
-        </ul>
-    <ul>
+<details>
+  <summary><a href="https://github.com/neanias/everforest-nvim">everforest-nvim</a> : Colorscheme for NeoVim.</summary>
+  <ul>
+    <li>Configured to dim inactive windows (better visibility of focused window).</li>
+    <li>
+      Custom keybinding:
+      <ul>
+        <li>Switch Dark/Light mode: <code>&lt;C-s&gt;</code></li>
+      </ul>
+    </li>
+  </ul>
 </details>
-- <details>
-    <summary>[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)</summary>
-    * Language parser required in many other plugins.
-    </details>
-- [which-key.nvim](https://github.com/folke/which-key.nvim)
-    * Interactive keybinding hints through a popup.
-- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
-    * Side-bar file explorer.
-    * Custom keybinding:
-        + Toggle on/off side-bar: `<C-n>`
-    * Changed internal mapping when focused on side-bar (in order to match the Split Window keybinding of `<C-w>`) :
-        + 'Open: Horizontal Split': `s`
-        + 'Open: Vertical Split': `v`
-        + 'Open: New Tab': `t`
-        + 'Run System': `<C-s>` (because `s` was already taken by this, so swapped them)
-    * To see ALL keybindings (default and custom), when focused on sidebar: `?`
-- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-    * Lua utility Library required by telescope.nvim.
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-    * Extensible fuzzy finder.
+<details>
+  <summary><a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a> : Language parser required in many other plugins.</summary>
+</details>
+<details>
+  <summary><a href="https://github.com/folke/which-key.nvim">which-key.nvim</a> : Interactive keybinding hints through a popup.</summary>
+</details>
+<details>
+  <summary><a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua</a> : Side-bar file explorer.</summary>
+  <ul>
+    <li>
+      Custom keybinding:
+      <ul>
+        <li>Toggle on/off side-bar: <code>&lt;C-n&gt;</code></li>
+      </ul>
+    </li>
+    <li>
+      Changed internal mapping when focused on side-bar (in order to match the Split Window keybinding of <code>&lt;C-w&gt;</code>):
+      <ul>
+        <li>'Open: Horizontal Split': <code>s</code></li>
+        <li>'Open: Vertical Split': <code>v</code></li>
+        <li>'Open: New Tab': <code>t</code></li>
+        <li>'Run System': <code>&lt;C-s&gt;</code> (because <code>s</code> was already taken by this, so swapped them)</li>
+      </ul>
+    </li>
+    <li>To see ALL keybindings (default and custom), when focused on sidebar: <code>?</code></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="https://github.com/nvim-lua/plenary.nvim">plenary.nvim</a> : Lua utility Library required by telescope.nvim.</summary>
+</details>
+<details>
+  <summary><a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a> : Extensible fuzzy finder.</summary>
+</details>
 
 
 ### Custom Keybindings:
@@ -113,27 +127,58 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
 
 ### Plugins included:
 
-- [ALE](https://github.com/dense-analysis/ale)
-    * Inline syntax errors (compilation errors).
-    * Can probably do other stuff, but didn't want to get into it as it was only for the inline errors that I added it.
-    * Custom keybind:
-        + Toggle inline errors: `<leader>c`
-    * Custom config:
-        + Added a custom function (written by chatGPT tbh) to disable inline errors when entering insert mode. Will have to toggle it back on afterward.
-            + If you do not want this option you can remove the function in nvim_code/lua/config/ALE.lua. Be aware that the first line is the toggle keybind.
-- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-    * Integrated terminal manager.
-    * Very powerful, can be used to manage several terminals in various ways at the same time, but I only included it in order to make managing one terminal much more intuitive than it is by default.
-    * Custom keybindings:
-        + Toggle term: `<C-\>`
-        + Toggle term in vertical, horizontal, float, or tab mode: `(<leader><C-{first_letter_of_mode}>)`
-        + Now works in terminal mode: `<esc>`
-        + Now works in terminal mode: `<C-{h, j, k, l}>`
-            + Lets the terminal in terminal mode, so you can naviguate seamlessly while never leaving terminal mode in your term.
-        + Exits terminal mode and then does `<C-w>`: `<C-w>`
-    * Size for horizontal and vertical mode can be changed in the keybinds in `/lua/config/toggleterm.lua`.
-- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-    * Autopairing plugin (match opening brackets/quotes/etc with closing ones after cursor).
+<details>
+  <summary><a href="https://github.com/dense-analysis/ale">ALE</a> : Inline syntax errors (compilation errors).</summary>
+  <ul>
+    <li>Can probably do other stuff, but didn't want to get into it as it was only for the inline errors that I added it.</li>
+    <li>
+      Custom keybind:
+      <ul>
+        <li>Toggle inline errors: <code>&lt;leader&gt;c</code></li>
+      </ul>
+    </li>
+    <li>
+      Custom config:
+      <ul>
+        <li>
+          Added a custom function (written by chatGPT tbh) to disable inline errors when entering insert mode. Will have to toggle it back on afterward.
+          <ul>
+            <li>If you do not want this option you can remove the function in <code>nvim_code/lua/config/ALE.lua</code>. Be aware that the first line is the toggle keybind.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</details>
+<details>
+  <summary><a href="https://github.com/akinsho/toggleterm.nvim">toggleterm.nvim</a> : Integrated terminal manager.</summary>
+  <ul>
+    <li>Very powerful, can be used to manage several terminals in various ways at the same time, but I only included it in order to make managing one terminal much more intuitive than it is by default.</li>
+    <li>
+      Custom keybindings:
+      <ul>
+        <li>Toggle term: <code>&lt;C-\&gt;</code></li>
+        <li>Toggle term in vertical, horizontal, float, or tab mode: <code>(&lt;leader&gt;&lt;C-{first_letter_of_mode}&gt;)</code></li>
+        <li>Now works in terminal mode: <code>&lt;esc&gt;</code></li>
+        <li>
+          Now works in terminal mode: <code>&lt;C-{h, j, k, l}&gt;</code>
+          <ul>
+            <li>Lets the terminal in terminal mode, so you can naviguate seamlessly while never leaving terminal mode in your term.</li>
+          </ul>
+        </li>
+        <li>Exits terminal mode and then does <code>&lt;C-w&gt;</code>: <code>&lt;C-w&gt;</code></li>
+      </ul>
+    </li>
+    <li>Size for horizontal and vertical mode can be changed in the keybinds in <code>/lua/config/toggleterm.lua</code>.</li>
+  </ul>
+</details>
+<details>
+  <summary><a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a> : Autopairing plugin.</summary>
+  <ul>
+    <li>Match opening brackets/quotes/etc with closing ones after cursor.</li>
+  </ul>
+</details>
+
 
 ### Custom Keybindings:
 
@@ -159,26 +204,54 @@ Config dedicated to note-taking. Includes plugins to edit Markdown files, as wel
 
 ### Plugins included:
 
-- [markdown.nvim](https://github.com/tadmccorkle/markdown.nvim)
-    * Enhanced Markdown editing tools.
-    * Included for the inline styling keybindings and Table of Content creator.
-    * Custom keybindings:
-        + Set selected text (Visual mode) to bold: `<C-b>`
-        + Set selected text (Visual mode) to italics: `<C-i>`
-        + Create Table of Content: `<leader>t`
-            + (Based on Markdown headings in your file)
-- [peek.nvim](https://github.com/toppair/peek.nvim)
-    * Markdown file live previewer.
-    * Opens another window (outside of the terminal) showing a live preview of the file in a GitHub style, updating in real time.
-    * Custom keybinding:
-        + Toggle preview window: `<C-q>`
-    * **Warning!**
-        + This plugin requires [deno](https://deno.com).
-        + Doesn't work on every system. 
-            + Worked fine when tested on Dells running Ubuntu.
-            + Didn't work when tested on iMacs running Ubuntu.
-- [bullets.vim](https://github.com/bullets-vim/bullets.vim)
-    * Automated bullet lists.
+<details>
+  <summary><a href="https://github.com/tadmccorkle/markdown.nvim">markdown.nvim</a> : Enhanced Markdown editing tools.</summary>
+  <ul>
+    <li>Included for the inline styling keybindings and Table of Content creator.</li>
+    <li>
+      Custom keybindings:
+      <ul>
+        <li>Set selected text (Visual mode) to bold: <code>&lt;C-b&gt;</code></li>
+        <li>Set selected text (Visual mode) to italics: <code>&lt;C-i&gt;</code></li>
+        <li>
+          Create Table of Content: <code>&lt;leader&gt;t</code>
+          <ul>
+            <li>(Based on Markdown headings in your file)</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</details>
+<details>
+  <summary><a href="https://github.com/toppair/peek.nvim">peek.nvim</a> : Markdown file live previewer.</summary>
+  <ul>
+    <li>Opens another window (outside of the terminal) showing a live preview of the file in a GitHub style, updating in real time.</li>
+    <li>
+      Custom keybinding:
+      <ul>
+        <li>Toggle preview window: <code>&lt;C-q&gt;</code></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Warning!</strong>
+      <ul>
+        <li>This plugin requires <a href="https://deno.com">deno</a>.</li>
+        <li>
+          Doesn't work on every system.
+          <ul>
+            <li>Worked fine when tested on Dells running Ubuntu.</li>
+            <li>Didn't work when tested on iMacs running Ubuntu.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</details>
+<details>
+  <summary><a href="https://github.com/bullets-vim/bullets.vim">bullets.vim</a> : Automated bullet lists.</summary>
+</details>
+
 
 ### Custom Keybindings:
 
