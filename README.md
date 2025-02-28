@@ -97,7 +97,7 @@ Every plugin, setting, or keybind included in this config is also included in ev
     </ul>
 </details>
 <details>
-    <summary><a href="https://github.com/Eandrju/cellular-automaton.nvim">cellular-automaton.nvim</a> : Surprise ! Press <code>&lt;leader&gt;fml</code> ;)</summary>
+    <summary><a href="https://github.com/Eandrju/cellular-automaton.nvim">cellular-automaton.nvim</a> : Surprise ;)</summary>
     <ul>
         <li>Press <code>&lt;leader&gt;fml</code> when in any file with any kind of text in it.</li>
     </ul>
@@ -109,7 +109,15 @@ Every plugin, setting, or keybind included in this config is also included in ev
     </ul>
 </details>
 <details>
-    <summary><a href="https://github.com/declancm/cinnamon.nvim">cinnamon.nvim</a> : Smooth scrolling.</summary>
+    <summary><a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a> : Library of tens of module acting as minimal plugins, easy to use and configure. This is a list of implemented modules.</summary>
+    <ul>
+        <li>Easily deactivate any module you don't want it by removing its <code>require</code> line in <code>init.lua</code>.</li>
+        <li>
+            <details>
+                <summary><a href="https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-animate.md">mini-animate</a> : Smooth scrolling.</summary>
+            </details>
+        </li>
+    </ul>
 </details>
 
 
@@ -198,7 +206,18 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
     <summary><a href="https://github.com/kobbikobb/move-lines.nvim">move-lines.nvim</a> : Move selected lines up or down.</summary>
 </details>
 <details>
-    <summary><a href="https://github.com/numToStr/Comment.nvim">Comment.nvim</a> : Powerful comment plugin.</summary>
+    <summary><a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a> : This is a list of implemented modules in this specific config.</summary>
+    <ul>
+        <li>
+            <details>
+                <summary><a href="https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-animate.md">mini-animate</a> : Comment code easily.</summary>
+                <ul>
+                    <li>Comment selected text with <code>gc</code> in visual mode.</li>
+                    <li>Comment current line with <code>gcc</code> in normal mode.</li>
+                </ul>
+            </details>
+        </li>
+    </ul>
 </details>
 
 
