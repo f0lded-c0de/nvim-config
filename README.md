@@ -58,8 +58,12 @@ Every plugin, setting, or keybind included in this config is also included in ev
     * Side-bar file explorer.
     * Custom keybinding:
         + Toggle on/off side-bar: `<C-n>`
-    * Added custom internal mapping when focused on side-bar (in order to match the Split Window keybinding of `<C-w>`) :
-        + 'Open: Horizontal Split' : `<C-s>`
+    * Changed internal mapping when focused on side-bar (in order to match the Split Window keybinding of `<C-w>`) :
+        + 'Open: Horizontal Split' : `s`
+        + 'Open: Vertical Split' : `v`
+        + 'Open: New Tab' : `t`
+        + 'Run System' : `<C-s>` (because `s` was already taken by this, so swapped them)
+    * To see ALL keybindings (default and custom), when focused on sidebar : `g?`
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
     * Lua utility Library required by telescope.nvim.
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)

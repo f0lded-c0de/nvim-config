@@ -16,7 +16,12 @@ return {
 			api.config.mappings.default_on_attach(bufnr)
 
 			-- Custom  mappings
-			vim.keymap.set('n', '<C-s>', api.node.open.horizontal, opts("Open: Horizontal Split"))
+			vim.keymap.set('n', 's', api.node.open.horizontal, opts("Open: Horizontal Split"))
+			vim.keymap.set('n', 'v', api.node.open.vertical, opts("Open: Vertical Split"))
+			vim.keymap.set('n', 't', api.node.open.tab, opts("Open: New Tab"))
+			vim.keymap.set('n', '<C-s>', api.node.run.system, opts("Run System"))
+			vim.keymap.del("n", "<C-v>", { buffer = bufnr })
+			vim.keymap.del("n", "<C-t>", { buffer = bufnr })
 		end
 
 		require("nvim-tree").setup {
