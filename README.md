@@ -193,6 +193,7 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
 | ---------------------- | ------------------------- |
 | `<C-\>`                | Toggle term on and off    |
 | `(<leader><C-{mode}>)` | Toggle term in {mode}     |
+| `<leader>c`            | Toggle inline error       |
 
 
 ### Custom Settings:
