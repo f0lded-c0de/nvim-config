@@ -59,11 +59,11 @@ Every plugin, setting, or keybind included in this config is also included in ev
     * Custom keybinding:
         + Toggle on/off side-bar: `<C-n>`
     * Changed internal mapping when focused on side-bar (in order to match the Split Window keybinding of `<C-w>`) :
-        + 'Open: Horizontal Split' : `s`
-        + 'Open: Vertical Split' : `v`
-        + 'Open: New Tab' : `t`
-        + 'Run System' : `<C-s>` (because `s` was already taken by this, so swapped them)
-    * To see ALL keybindings (default and custom), when focused on sidebar : `?`
+        + 'Open: Horizontal Split': `s`
+        + 'Open: Vertical Split': `v`
+        + 'Open: New Tab': `t`
+        + 'Run System': `<C-s>` (because `s` was already taken by this, so swapped them)
+    * To see ALL keybindings (default and custom), when focused on sidebar: `?`
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
     * Lua utility Library required by telescope.nvim.
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
@@ -108,17 +108,24 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
 - [ALE](https://github.com/dense-analysis/ale)
     * Inline syntax errors (compilation errors).
     * Can probably do other stuff, but didn't want to get into it as it was only for the inline errors that I added it.
+    * Custom keybind:
+        + Toggle inline errors: `<leader>c`
+    * Custom config:
+        + Added a custom function (written by chatGPT tbh) to disable inline errors when entering insert mode. Will have to toggle it back on afterward.
+            + If you do not want this option you can remove the function in nvim_code/lua/config/ALE.lua. Be aware that the first line is the toggle keybind.
 - [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
     * Integrated terminal manager.
     * Very powerful, can be used to manage several terminals in various ways at the same time, but I only included it in order to make managing one terminal much more intuitive than it is by default.
-    * Custom keybindings :
-        + Toggle term on and off : `<C-\>`
-        + Toggle term in vertical, horizontal, float, or tab mode : `(<leader><C-{first_letter_of_mode}>)`
-        + Now works in terminal mode : `<esc>`
-        + Now works in terminal mode : `<C-{h, j, k, l}>`
+    * Custom keybindings:
+        + Toggle term: `<C-\>`
+        + Toggle term in vertical, horizontal, float, or tab mode: `(<leader><C-{first_letter_of_mode}>)`
+        + Now works in terminal mode: `<esc>`
+        + Now works in terminal mode: `<C-{h, j, k, l}>`
             + Lets the terminal in terminal mode, so you can naviguate seamlessly while never leaving terminal mode in your term.
-        + Exits terminal mode and then does `<C-w>` : `<C-w>`
+        + Exits terminal mode and then does `<C-w>`: `<C-w>`
     * Size for horizontal and vertical mode can be changed in the keybinds in `/lua/config/toggleterm.lua`.
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+    * Autopairing plugin (match opening brackets/quotes/etc with closing ones after cursor).
 
 ### Custom Keybindings:
 

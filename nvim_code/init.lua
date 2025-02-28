@@ -15,3 +15,6 @@ require("config.everforest")
 
 -- Telescope KeyBinds
 require("config.telescope")
+
+-- ALE config
+require("config.ALE")
