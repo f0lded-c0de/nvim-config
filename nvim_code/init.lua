@@ -7,11 +7,12 @@ require("config.keybinds")
 -- Plugins Startup
 require("config.lazy")
 
+-- Mini.nvim modules
+require("mini.animate").setup()
+require('mini.comment').setup({})
+
 --  Fun Stuff
 require("config.fun")
-
--- Comment.nvim Startup
-require('Comment').setup()
 
 -- Toggleterm Config
 require("config.toggleterm")
