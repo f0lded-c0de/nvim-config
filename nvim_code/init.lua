@@ -1,15 +1,16 @@
 -- Vim Settings
 require("config.nvim")
 
--- NeoVim Config
-require("config.keybinds")
-
 -- Plugins Startup
 require("config.lazy")
 
+-- NeoVim Config
+require("config.keybinds")
+
 -- Mini.nvim modules
+require("mini.comment").setup()
+require("mini.trailspace").setup()
 require("config.mini-animate")
-require('mini.comment').setup()
 require("config.mini-move")
 
 --  Fun Stuff

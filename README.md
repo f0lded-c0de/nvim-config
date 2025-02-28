@@ -123,17 +123,17 @@ Every plugin, setting, or keybind included in this config is also included in ev
 
 ### Custom Keybindings:
 
-| Keybinding | Action                                             |
-| ---------- | -------------------------------------------------- |
-| `<S-h>`    | Go to previous tab                                 |
-| `<S-l>`    | Go to next tab                                     |
-| `<C-h>`    | Go to left window                                  |
-| `<C-j>`    | Go to down window                                  |
-| `<C-k>`    | Go to up window                                    |
-| `<C-l>`    | Go to right window                                 |
-| `<C-n>`    | Toggle nvim-tree side-bar                          |
-| `<C-s>`    | Toggle dark/light mode                             |
-| `?`        | Toggle keybind help<br>(When on nvim tree sidebar) |
+| Keybinding   | Action                                             |
+| ------------ | -------------------------------------------------- |
+| `<S-h>`      | Go to previous tab                                 |
+| `<S-l>`      | Go to next tab                                     |
+| `<C-h>`      | Go to left window                                  |
+| `<C-j>`      | Go to down window                                  |
+| `<C-k>`      | Go to up window                                    |
+| `<C-l>`      | Go to right window                                 |
+| `<C-n>`      | Toggle nvim-tree side-bar                          |
+| `<leader-s>` | Toggle dark/light mode                             |
+| `?`          | Toggle keybind help<br>(When on nvim tree sidebar) |
 
 
 ### Custom Settings:
@@ -221,6 +221,14 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
                     <li>Update indentation live.</li>
                     <li>Move selected text with <code>&lt;C-{motion}&gt;</code> in visual mode.</li>
                     <li>Move current line with <code>&lt;M-{motion}&gt;</code> in normal mode. (M = Alt or Option)</li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary><a href="https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-trailspace.md">mini-trailspace</a> : Highlight trailing whitespaces and custom keybind to remove them.</summary>
+                <ul>
+                    <li>Remove all trailing whitespaces (currently highlighted) with <code>&lt;leader&gt;t</code> in normal mode.</li>
                 </ul>
             </details>
         </li>
