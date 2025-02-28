@@ -46,12 +46,16 @@ Every plugin, setting, or keybind included in this config is also included in ev
 ### Plugins included:
 
 - <details>
-    <summary>[everforest-nvim](https://github.com/neanias/everforest-nvim)</summary>
-    * Colorscheme for NeoVim.
-    * Configured to dim inactive windows (better visibility of focused window).
-    * Custom keybinding:
-        + Switch Dark/Light mode: `<C-s>`
-    </details>
+    <summary><a href=https://github.com/neanias/everforest-nvim>everforest-nvim</a></summary>
+    <ul>
+        <li>Colorscheme for NeoVim.</li>
+        <li>Configured to dim inactive windows (better visibility of focused window).</li>
+        <li>Custom keybinding:</li>
+        <ul>
+            <li>Switch Dark/Light mode: `<C-s>`</li>
+        </ul>
+    <ul>
+</details>
 - <details>
     <summary>[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)</summary>
     * Language parser required in many other plugins.
