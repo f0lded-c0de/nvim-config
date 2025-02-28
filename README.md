@@ -90,6 +90,12 @@ Every plugin, setting, or keybind included in this config is also included in ev
 <details>
   <summary><a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a> : Extensible fuzzy finder.</summary>
 </details>
+<details>
+    <summary><a href="https://github.com/nacro90/numb.nvim">numb.nvim</a> : Line number peeker.</summary>
+    <ul>
+        <li>Show you where you would end up when typing <code>:{number}</code>, while typing live</li>
+    </ul>
+</details>
 
 
 ### Custom Keybindings:
@@ -116,6 +122,7 @@ vim.opt.softtabstop = 4
 vim.opt.number = true
 vim.opt.wrap = false
 vim.opt.cursorline = true
+vim.opt.relativenumber = true
 ```
 
 [Back to top](#top)
