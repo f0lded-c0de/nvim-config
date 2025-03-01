@@ -207,6 +207,9 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
   </ul>
 </details>
 <details>
+  <summary><a href="https://github.com/HiPhish/rainbow-delimiters.nvim">rainbow-delimiters.nvim</a> : Different colors for nested parenthesis and such for better clarity.</summary>
+</details>
+<details>
     <summary><a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a> : This is a list of implemented modules in this specific config.</summary>
     <ul>
         <li>
