@@ -29,3 +29,6 @@ vim.keymap.set('n', '<leader>t', ':lua MiniTrailspace.trim()<CR>', { noremap = t
 -- Commasemi.nvim
 vim.keymap.set('n', '<leader>;', ':SemiToggle<CR>', { noremap = true, silent = true, desc = "Toggle semicolon at end of current line" })
 vim.keymap.set('n', '<leader>,', ':CommaToggle<CR>', { noremap = true, silent = true, desc = "Toggle comma at end of current line" })
+
+-- 42-header.nvim
+vim.keymap.set('n', '<leader>h', ':Stdheader<CR>', { noremap = true, silent = true, desc = "Add 42 header at top of file" })
