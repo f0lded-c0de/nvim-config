@@ -1,3 +1,6 @@
+require("everforest").setup({
+	background = "hard",
+})
 vim.keymap.set('n', '<leader>s', function()
 	if vim.o.background == "dark" then
 		vim.o.background = "light"
