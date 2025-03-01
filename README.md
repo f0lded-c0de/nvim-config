@@ -30,7 +30,8 @@
 Clone this repo in your `~/.config/` (or equivalent), and add these lines to `~/.zshrc` :
 ```bash
 export NVIM_APPNAME=nvim-config/nvim_base
-alias nv="export NVIM_APPNAME=nvim-config/nvim_base && nvim" # Switch to and open with basic config
+alias nv="~/.nvim.appimage" # Open last config
+alias nvb="export NVIM_APPNAME=nvim-config/nvim_base && nvim" # Switch to and open with basic config
 alias nvn="export NVIM_APPNAME=nvim-config/nvim_note && nvim" # Switch to and open with note-taking config
 alias nvc="export NVIM_APPNAME=nvim-config/nvim_code && nvim" # Switch to and open with coding config
 ```
