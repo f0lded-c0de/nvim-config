@@ -5,6 +5,10 @@ vim.keymap.set('n', '<C-h>', '<C-w>h', { noremap = true, silent = true, desc = "
 vim.keymap.set('n', '<C-j>', '<C-w>j', { noremap = true, silent = true, desc = "Go to the down window" })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { noremap = true, silent = true, desc = "Go to the up window" })
 vim.keymap.set('n', '<C-l>', '<C-w>l', { noremap = true, silent = true, desc = "Go to the right window" })
+function ToggleRelativeNumbers()
+	vim.wo.relativenumber = not vim.wo.relativenumber
+end
+vim.keymap.set('n', '<leader>n', ':lua ToggleRelativeNumbers()<CR>', { noremap = true, silent = true, desc = "Toggle relative number" })
 
 -- Nvim-tree
 vim.keymap.set('n', '<C-n>', function()

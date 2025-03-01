@@ -1,11 +1,11 @@
 -- Vim Settings
 require("config.nvim")
 
--- NeoVim Config
-require("config.keybinds")
-
 -- Plugins Startup
 require("config.lazy")
+
+-- NeoVim Config
+require("config.keybinds")
 
 -- Mini.nvim modules
 require("config.mini-animate")

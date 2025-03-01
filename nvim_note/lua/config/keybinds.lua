@@ -8,3 +8,7 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', { noremap = true, silent = true, desc = "
 vim.keymap.set('n', '<C-n>', function()
 	require('nvim-tree.api').tree.toggle()
 end, { noremap = true, silent = true, desc = "Toggle nvim-tree Sidebar" })
+function ToggleRelativeNumbers()
+	vim.wo.relativenumber = not vim.wo.relativenumber
+end
+vim.keymap.set('n', '<leader>n', ':lua ToggleRelativeNumbers()<CR>', { noremap = true, silent = true, desc = "Toggle relative number" })

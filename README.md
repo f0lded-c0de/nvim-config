@@ -119,6 +119,9 @@ Every plugin, setting, or keybind included in this config is also included in ev
         </li>
     </ul>
 </details>
+<details>
+    <summary><a href="https://github.com/Xuyuanp/scrollbar.nvim">scrollbar.nvim</a> : Display scrollbar to the right (purely visual).</summary>
+</details>
 
 
 ### Custom Keybindings:
@@ -132,8 +135,9 @@ Every plugin, setting, or keybind included in this config is also included in ev
 | `<C-k>`      | Go to up window                                    |
 | `<C-l>`      | Go to right window                                 |
 | `<C-n>`      | Toggle nvim-tree side-bar                          |
-| `<leader-s>` | Toggle dark/light mode                             |
+| `<leader>s`  | Toggle dark/light mode                             |
 | `?`          | Toggle keybind help<br>(When on nvim tree sidebar) |
+| `<leader>n`  | Toggle relative line number                        |
 
 
 ### Custom Settings:
