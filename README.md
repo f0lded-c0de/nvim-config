@@ -225,6 +225,19 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
   <summary><a href="https://github.com/HiPhish/rainbow-delimiters.nvim">rainbow-delimiters.nvim</a> : Different colors for nested parenthesis and such for better clarity.</summary>
 </details>
 <details>
+  <summary><a href="https://github.com/saifulapm/commasemi.nvim">commasemi.nvim</a> : Toggle semicolon and comma at end of line.</summary>
+  <ul>
+    <li>Toggle semicolon at end of current line : <code>&lt;leader&gt;;</code></li>
+    <li>Toggle comma at end of current line : <code>&lt;leader&gt;,</code></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="https://github.com/xiyaowong/virtcolumn.nvim">virtcolumn.nvim</a> : Display better colorcolumn.</summary>
+  <ul>
+    <li>Configured for 80 characters (in nvim_code/lua/config/nvim.lua)</li>
+  </ul>
+</details>
+<details>
     <summary><a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a> : This is a list of implemented modules in this specific config.</summary>
     <ul>
         <li>

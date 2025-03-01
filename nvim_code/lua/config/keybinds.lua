@@ -25,3 +25,7 @@ vim.keymap.set('n', '<leader>Sc', ':SClose<CR>', { noremap = true, silent = true
 -- Mini.nvim
 ---- Mini-trailspace
 vim.keymap.set('n', '<leader>t', ':lua MiniTrailspace.trim()<CR>', { noremap = true, silent = true, desc = "Remove all trailing whitespaces" })
+
+-- Commasemi.nvim
+vim.keymap.set('n', '<leader>;', ':SemiToggle<CR>', { noremap = true, silent = true, desc = "Toggle semicolon at end of current line" })
+vim.keymap.set('n', '<leader>,', ':CommaToggle<CR>', { noremap = true, silent = true, desc = "Toggle comma at end of current line" })

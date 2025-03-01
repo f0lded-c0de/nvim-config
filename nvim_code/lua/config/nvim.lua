@@ -6,3 +6,4 @@ vim.opt.wrap = false
 vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.smartindent = true
+vim.opt.colorcolumn = "80"
