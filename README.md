@@ -97,15 +97,18 @@ Every plugin, setting, or keybind included in this config is also included in ev
     </ul>
 </details>
 <details>
-    <summary><a href="https://github.com/Eandrju/cellular-automaton.nvim">cellular-automaton.nvim</a> : Surprise ;)</summary>
-    <ul>
-        <li>Press <code>&lt;leader&gt;fml</code> when in any file with any kind of text in it.</li>
-    </ul>
-</details>
-<details>
     <summary><a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a> : Autopairing plugin.</summary>
     <ul>
         <li>Match opening brackets/quotes/etc with closing ones after cursor.</li>
+    </ul>
+</details>
+<details>
+    <summary><a href="https://github.com/mhinz/vim-startify">vim-startify</a>Starting screen that lets you manage sessions.</summary>
+    <ul>
+        <li>Load session : <code>&lt;leader&gt;Sl</code></li>
+        <li>Save session : <code>&lt;leader&gt;Ss</code></li>
+        <li>Delete session : <code>&lt;leader&gt;Sd</code></li>
+        <li>Close session : <code>&lt;leader&gt;Sc</code></li>
     </ul>
 </details>
 <details>
@@ -121,6 +124,12 @@ Every plugin, setting, or keybind included in this config is also included in ev
 </details>
 <details>
     <summary><a href="https://github.com/Xuyuanp/scrollbar.nvim">scrollbar.nvim</a> : Display scrollbar to the right (purely visual).</summary>
+</details>
+<details>
+    <summary><a href="https://github.com/Eandrju/cellular-automaton.nvim">cellular-automaton.nvim</a> : Surprise ;)</summary>
+    <ul>
+        <li>Press <code>&lt;leader&gt;fml</code> when in any file with any kind of text in it.</li>
+    </ul>
 </details>
 
 
@@ -138,6 +147,11 @@ Every plugin, setting, or keybind included in this config is also included in ev
 | `<leader>s`  | Toggle dark/light mode                             |
 | `?`          | Toggle keybind help<br>(When on nvim tree sidebar) |
 | `<leader>n`  | Toggle relative line number                        |
+| `<leader>Sl` | Load session                                       |
+| `<leader>Ss` | Save session                                       |
+| `<leader>Sd` | Delete session                                     |
+| `<leader>Sc` | Close session                                      |
+| `<leader>Lu` | Lazy update (update all plugins)                   |
 
 
 ### Custom Settings:
