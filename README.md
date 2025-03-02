@@ -355,4 +355,9 @@ Config dedicated to note-taking. Includes plugins to edit Markdown files, as wel
 | `<leader>q` | Toggle preview window       |
 
 
+### Custom Settings:
+
+```lua
+vim.opt.wrap = false
+```
 [Back to top](#top)
