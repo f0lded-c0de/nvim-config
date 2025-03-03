@@ -9,6 +9,7 @@ require("config.keybinds")
 
 -- Mini.nvim modules
 require("config.mini-animate")
+require("config.mini-move")
 
 --  Fun Stuff
 require("config.fun")
