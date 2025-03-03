@@ -6,7 +6,7 @@ return {
 
 		configs.setup({
 			ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "html" },
-			highlight = { enable = true },
+			highlight = { enable = false },
 			indent = { enable = true },
 		})
 	end

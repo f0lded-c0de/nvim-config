@@ -60,6 +60,9 @@ Every plugin, setting, or keybind included in this config is also included in ev
 </details>
 <details>
   <summary><a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a> : Language parser required in many other plugins.</summary>
+    <ul>
+        <li>Turned off nvim-treesitter auto indent module as it is messing up neovim default auto indent, which works perfectly.</li>
+    </ul>
 </details>
 <details>
   <summary><a href="https://github.com/folke/which-key.nvim">which-key.nvim</a> : Interactive keybinding hints through a popup.</summary>
@@ -278,14 +281,6 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
 | `<C-\>`                | Toggle term on and off    |
 | `(<leader><C-{mode}>)` | Toggle term in {mode}     |
 | `<leader>c`            | Toggle inline error       |
-
-
-### Custom Settings:
-
-```lua
-vim.opt.smartindent = true
-```
-
 
 [Back to top](#top)
 
