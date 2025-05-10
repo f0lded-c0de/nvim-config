@@ -27,7 +27,7 @@
 
 ### Set up:
 
-Clone this repo in your `~/.config/` (or equivalent), and add these lines to `~/.zshrc` :
+Clone this repo in your `~/.config/` (or equivalent) under the name `nvim-config`, and add these lines to `~/.zshrc` :
 ```bash
 export NVIM_APPNAME=nvim-config/nvim_base
 alias nv="~/.nvim.appimage" # Open last config
