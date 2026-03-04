@@ -13,7 +13,6 @@
 
 ### Set up:
 
-<<<<<<< HEAD
 Clone this repo as "nvim" in your `~/.config/` (or equivalent), and add this line to `~/.zshrc` :
 ```bash
 export NVIM_APPNAME=nvim
