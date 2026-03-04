@@ -10,7 +10,7 @@ require("config.keybinds")
 -- Mini.nvim modules
 require("mini.comment").setup()
 require("mini.trailspace").setup()
-require("config.mini-animate")
+--require("config.mini-animate")
 require("config.mini-move")
 
 --  Fun Stuff

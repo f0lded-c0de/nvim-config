@@ -2,47 +2,23 @@
 # Table of Content
 
 - [Installation](#installation)
-    - [Requirements:](#requirements)
     - [Set up:](#set-up)
 - [Configs Documentation](#configs-documentation)
-    - [nvim_base](#nvim_base)
-        - [Plugins included](#plugins-included)
-        - [Custom Keybindings](#custom-keybindings)
-        - [Custom Settings](#custom-settings)
-    - [nvim_code](#nvim_code)
-        - [Plugins included](#plugins-included-1)
-        - [Custom Keybindings](#custom-keybindings-1)
-        - [Custom Settings](#custom-settings-1)
-    - [nvim_note](#nvim_note)
-        - [Plugins included](#plugins-included-2)
-        - [Custom Keybindings](#custom-keybindings-2)
+    - [Plugins included](#plugins-included)
+    - [Custom Keybindings](#custom-keybindings)
+    - [Custom Settings](#custom-settings)
 
 
 # Installation
 
-### Requirements:
-
-- [deno](https://deno.com) is required to use the markdown live preview plugin in the nvim_note config.
-
-
 ### Set up:
 
-Clone this repo in your `~/.config/` (or equivalent), and add these lines to `~/.zshrc` :
+Clone this repo as "nvim" in your `~/.config/` (or equivalent), and add this line to `~/.zshrc` :
 ```bash
-export NVIM_APPNAME=nvim-config/nvim_base
-alias nv="~/.nvim.appimage" # Open last config
-alias nvb="export NVIM_APPNAME=nvim-config/nvim_base && nvim" # Switch to and open with basic config
-alias nvn="export NVIM_APPNAME=nvim-config/nvim_note && nvim" # Switch to and open with note-taking config
-alias nvc="export NVIM_APPNAME=nvim-config/nvim_code && nvim" # Switch to and open with coding config
+export NVIM_APPNAME=nvim
 ```
-You can then use these aliases to open NeoVim with any config.
 
-# Configs Documentation
-
-## nvim_base
-
-Basic config, template to build a new config, and useful to work on current configs, in case stuff gets broken in the process.
-Every plugin, setting, or keybind included in this config is also included in every other configs.
+# Config Documentation
 
 ### Plugins included:
 
@@ -135,50 +111,6 @@ Every plugin, setting, or keybind included in this config is also included in ev
         <li>Press <code>&lt;leader&gt;fml</code> when in any file with any kind of text in it.</li>
     </ul>
 </details>
-
-
-### Custom Keybindings:
-
-| Keybinding   | Action                                             |
-| ------------ | -------------------------------------------------- |
-| `<S-h>`      | Go to previous tab                                 |
-| `<S-l>`      | Go to next tab                                     |
-| `<C-h>`      | Go to left window                                  |
-| `<C-j>`      | Go to down window                                  |
-| `<C-k>`      | Go to up window                                    |
-| `<C-l>`      | Go to right window                                 |
-| `<C-n>`      | Toggle nvim-tree side-bar                          |
-| `<leader>s`  | Toggle dark/light mode                             |
-| `?`          | Toggle keybind help<br>(When on nvim tree sidebar) |
-| `<leader>n`  | Toggle relative line number                        |
-| `<leader>Sl` | Load session                                       |
-| `<leader>Ss` | Save session                                       |
-| `<leader>Sd` | Delete session                                     |
-| `<leader>Sc` | Close session                                      |
-| `<leader>Lu` | Lazy update (update all plugins)                   |
-
-
-### Custom Settings:
-
-```lua
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
-vim.opt.number = true
-vim.opt.wrap = false
-vim.opt.cursorline = true
-vim.opt.relativenumber = true
-```
-
-[Back to top](#top)
-
-
-## nvim_code
-
-Coding dedicated config. Include stuff to help write/edit code as well as testing it. Tested only with the C language, although nothing I implemented was only designed for the C language.
-
-### Plugins included:
-
 <details>
   <summary><a href="https://github.com/dense-analysis/ale">ALE</a> : Inline syntax errors (compilation errors).</summary>
   <ul>
@@ -276,83 +208,38 @@ Coding dedicated config. Include stuff to help write/edit code as well as testin
 
 ### Custom Keybindings:
 
-| Keybinding             | Action                    |
-| ---------------------- | ------------------------- |
+| Keybinding   | Action                                             |
+| ------------ | -------------------------------------------------- |
+| `<S-h>`      | Go to previous tab                                 |
+| `<S-l>`      | Go to next tab                                     |
+| `<C-h>`      | Go to left window                                  |
+| `<C-j>`      | Go to down window                                  |
+| `<C-k>`      | Go to up window                                    |
+| `<C-l>`      | Go to right window                                 |
+| `<C-n>`      | Toggle nvim-tree side-bar                          |
+| `<leader>s`  | Toggle dark/light mode                             |
+| `?`          | Toggle keybind help<br>(When on nvim tree sidebar) |
+| `<leader>n`  | Toggle relative line number                        |
+| `<leader>Sl` | Load session                                       |
+| `<leader>Ss` | Save session                                       |
+| `<leader>Sd` | Delete session                                     |
+| `<leader>Sc` | Close session                                      |
+| `<leader>Lu` | Lazy update (update all plugins)                   |
 | `<C-\>`                | Toggle term on and off    |
 | `(<leader><C-{mode}>)` | Toggle term in {mode}     |
 | `<leader>c`            | Toggle inline error       |
-
-[Back to top](#top)
-
-
-## nvim_note
-
-Config dedicated to note-taking. Includes plugins to edit Markdown files, as well as preview them easily.
-
-### Plugins included:
-
-<details>
-  <summary><a href="https://github.com/tadmccorkle/markdown.nvim">markdown.nvim</a> : Enhanced Markdown editing tools.</summary>
-  <ul>
-    <li>Included for the inline styling keybindings and Table of Content creator.</li>
-    <li>
-      Custom keybindings:
-      <ul>
-        <li>Set selected text (Visual mode) to bold: <code>&lt;C-b&gt;</code></li>
-        <li>Set selected text (Visual mode) to italics: <code>&lt;C-i&gt;</code></li>
-        <li>
-          Create Table of Content: <code>&lt;leader&gt;t</code>
-          <ul>
-            <li>(Based on Markdown headings in your file)</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</details>
-<details>
-  <summary><a href="https://github.com/toppair/peek.nvim">peek.nvim</a> : Markdown file live previewer.</summary>
-  <ul>
-    <li>Opens another window (outside of the terminal) showing a live preview of the file in a GitHub style, updating in real time.</li>
-    <li>
-      Custom keybinding:
-      <ul>
-        <li>Toggle preview window: <code>&lt;C-q&gt;</code></li>
-      </ul>
-    </li>
-    <li>
-      <strong>Warning!</strong>
-      <ul>
-        <li>This plugin requires <a href="https://deno.com">deno</a>.</li>
-        <li>
-          Doesn't work on every system.
-          <ul>
-            <li>Worked fine when tested on Dells running Ubuntu.</li>
-            <li>Didn't work when tested on iMacs running Ubuntu.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</details>
-<details>
-  <summary><a href="https://github.com/bullets-vim/bullets.vim">bullets.vim</a> : Automated bullet lists.</summary>
-</details>
-
-
-### Custom Keybindings:
-
-| Keybinding  | Action                      |
-| ----------- | --------------------------- |
-| `<C-b>`     | Set selected text to bold   |
-| `<C-i>`     | Set selected text to italic |
-| `<leader>t` | Create Table of Content     |
-| `<leader>q` | Toggle preview window       |
 
 
 ### Custom Settings:
 
 ```lua
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.number = true
 vim.opt.wrap = false
+vim.opt.cursorline = true
+vim.opt.relativenumber = true
 ```
+
 [Back to top](#top)
